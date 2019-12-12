@@ -36,18 +36,18 @@ export default class Home extends React.Component {
         </Text>
       </View>
         
-      // <View style={{marginVertical: 20}}>
-      //   <Button
-      //       title="Signout" color="blue"
-      //       onPress={this.signoutNow()}>
-      //   </Button>
-      // </View>
+      <View style={{marginVertical: 20}}>
+        <Button
+            title="Signout" color="blue"
+            onPress={this.signoutNow()}>
+        </Button>
+      </View>
 
-      // <View style={{marginVertical: 20}}>
-      //   <Button
-      //       title="Database" color="blue"
-      //       onPress={this.opendatabaseNow()} />
-      // </View>
+      {/* <View style={{marginVertical: 20}}>
+        <Button
+            title="Database" color="blue"
+            onPress={this.opendatabaseNow()} />
+      </View> */}
     );
   }
 }

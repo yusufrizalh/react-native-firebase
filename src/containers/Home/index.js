@@ -1,6 +1,12 @@
 import React from 'react';
-import {StyleSheet, Platform, Image, Text, View, Button} from 'react-native';
+import {StyleSheet, Platform, 
+    Image, Text, 
+    View, Button, 
+    FlatList
+    } from 'react-native';
 import firebase from 'react-native-firebase';
+
+//import firestore from '@react-native-firebase/firestore';
 
 export default class Home extends React.Component {
   state = {currentUser: null};
@@ -9,11 +15,16 @@ export default class Home extends React.Component {
     this.setState({currentUser});
   }
 
-    // function untuk signout
-    signoutNow = () => {
-        firebase.auth().signOut()
-        .then(this.props.navigation.navigate('Signup'));
-    }
+  // function untuk signout
+  signoutNow = () => {
+    firebase.auth().signOut()
+      .then(this.props.navigation.navigate('Signup'));
+  }
+
+  // function membuka layout database 
+  opendatabaseNow = () => {
+    this.props.navigation.navigate('Database');
+  }
 
   render() {
     const {currentUser} = this.state;
@@ -25,11 +36,18 @@ export default class Home extends React.Component {
         </Text>
       </View>
         
-      <View style={{marginVertical: 20}}>
-        <Button
-            title="Signout" color="blue"
-            onPress={this.signoutNow()} />
-      </View>
+      // <View style={{marginVertical: 20}}>
+      //   <Button
+      //       title="Signout" color="blue"
+      //       onPress={this.signoutNow()}>
+      //   </Button>
+      // </View>
+
+      // <View style={{marginVertical: 20}}>
+      //   <Button
+      //       title="Database" color="blue"
+      //       onPress={this.opendatabaseNow()} />
+      // </View>
     );
   }
 }

@@ -10,6 +10,7 @@ import SplashPage from './src/containers/SplashPage';
 import Signup from './src/containers/Signup';
 import Home from './src/containers/Home';
 import Login from './src/containers/Login';
+import Database from './src/containers/Database/index';
 
 const App = createStackNavigator(
   {
@@ -33,6 +34,12 @@ const App = createStackNavigator(
     },
     Login: {
       screen: Login, 
+      navigationOptions: {
+        header: null, 
+      }, 
+    },
+    Database: {
+      screen: Database, 
       navigationOptions: {
         header: null, 
       }, 

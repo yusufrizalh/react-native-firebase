@@ -14,7 +14,7 @@
     "postinstall": "npx jetify"
   },
   "dependencies": {
-    "grpc": "^1.24.2",
+    "grpc": "^1.24.9",
     "jetifier": "^1.6.4",
     "react": "16.8.6",
     "react-native": "0.60.5",

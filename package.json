@@ -17,7 +17,7 @@
     "grpc": "^1.24.2",
     "jetifier": "^1.6.4",
     "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react-native": "0.62.3",
     "react-native-firebase": "^5.5.6",
     "react-native-gesture-handler": "^1.5.2",
     "react-native-paper": "^3.3.0",
